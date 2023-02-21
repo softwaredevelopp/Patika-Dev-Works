@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="nav" id="nav">
+        <h1 style="color:rgb(223, 35, 35);" class="text-red-600 text-4xl font-bold cursor-pointer">NETFLIX</h1>
+        <div>
+            <button id="signin">
+                Sign In
+            </button>
+            <button id="signup">
+                Sign Up
+            </button class="text-red-600 px-6 py-2 rounded cursor-pointer">
+        </div>
+    </div>
+
+
+
+    <!-- Banner -->
+    <div class="banner" id="banner">
+        <video style="pointer-events: none;" class="banner" poster="stranger-things.png" id="video">
+            <source src="stranger things.mp4" type="video/mp4" />
+        </video>
+        <div class="banner_contents">
+            <h1 class="banner_title">Stranger Things</h1>
+            <div class="banner_buttons">
+                <button class="banner_button" id="btnPlayPause" accesskey="p" onclick="playPauseVideo();">Play</button>
+                <button class="banner_button">Watch Later</button>
+            </div>
+
+            <div class="banner_desc">
+                When a young boy disappears, his mother, a police chief and his friends must confront terrifying
+                supernatural forces in order to get him back.
+            </div>
+        </div>
+    </div>
+
+    <!-- Netflix Originals -->
+    <div class="row first">
+        <h2>NETFLIX ORIGINALS</h2>
+        <div class="row_posters">
+            <img src="https://i.ytimg.com/vi/OIr_fYpwe6Q/maxresdefault.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://flxt.tmsimg.com/assets/p17650912_b_h9_ab.jpg" alt="" class="row_poster row_posterLarge">
+            <img src="https://pbs.twimg.com/media/D76M2jUV4AAX-vt.jpg:large" alt="" class="row_poster row_posterLarge">
+            <img src="https://occ-0-299-300.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbMU6NOh3tNGVG4cR3YveHEQ8lhC7vU1N7sFlSbuR-8VpxMAO0DOSst8cbdc88hsFxYBU6YpxB5so1WEbjLw94M-vkhT.jpg?r=f8f"
+                alt="" class="row_poster row_posterLarge">
+            <img src="https://kecemedia.com/wp-content/uploads/2020/08/akurat_20200410082736_88OqBb.jpg" alt=""
+                class="row_poster row_posterLarge">
+            <img src="http://mobimg.b-cdn.net/v3/fetch/8c/8c6793e6c84cb7735334c766df9cd668.jpeg" alt=""
+                class="row_poster row_posterLarge">
+            <img src="https://www.cineserie.com/wp-content/uploads/2011/06/1143500.jpg" alt=""
+                class="row_poster row_posterLarge">
+            <img src="https://media.vandalsports.com/master/8-2021/2021816175752_1.jpg" alt=""
+                class="row_poster row_posterLarge">
+        </div>
+    </div>
+
+    <!-- Trending Now -->
+
+    <div class="row">
+        <h2>TRENDING NOW</h2>
+        <div class="row_posters">
+            <img src="https://rare-gallery.com/uploads/posts/774790-Gandalf-Bilbo-The-Hobbit-The-Hobbit-The-Battle-of-the-Five-Armies.jpg"
+                alt="" class="row_poster">
+            <img src="https://i.ytimg.com/vi/P68Xd3xJ8lc/maxresdefault.jpg" alt="" class="row_poster">
+            <img src="https://occ-0-2430-2433.1.nflxso.net/dnm/api/v6/7e0PTVDdJ65eumyzagWiJKiw6MU/AAAABe3jURtuZyy8M-92ZefrFXLMEhTFKy9nfCBisWkJ5_4qy5kg4ywWrG1lwlD1RGABi44IsDnGomA2E3lDV-7UVoJz1J8e.jpg"
+                alt="" class="row_poster">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/02/harry%20potter.jpeg"
+                alt="" class="row_poster">
+            <img src="https://img.reelgood.com/content/movie/e55cf256-78b7-41d1-a608-abd5a2094a26/backdrop-1920.jpg"
+                alt="" class="row_poster">
+            <img src="https://shiftdelete.net/wp-content/uploads/2021/03/netflix-kagittan-hayatlar-fragmani-1.jpg"
+                alt="" class="row_poster">
+            <img src="https://sinemasayfam.com/wp-content/uploads/2022/03/the-adam-project-netflix-2.png" alt=""
+                class="row_poster">
+            <img src="https://wallpaperset.com/w/full/f/2/1/204609.jpg" alt="" class="row_poster">
+        </div>
+    </div>
+
+    <!-- Top Rated -->
+
+    <div class="row">
+        <h2>TOP RATED</h2>
+        <div class="row_posters">
+            <img src="https://i.ytimg.com/vi/P68Xd3xJ8lc/maxresdefault.jpg" alt="" class="row_poster">
+            <img src="https://occ-0-2430-2433.1.nflxso.net/dnm/api/v6/7e0PTVDdJ65eumyzagWiJKiw6MU/AAAABe3jURtuZyy8M-92ZefrFXLMEhTFKy9nfCBisWkJ5_4qy5kg4ywWrG1lwlD1RGABi44IsDnGomA2E3lDV-7UVoJz1J8e.jpg"
+                alt="" class="row_poster">
+            <img src="https://pbs.twimg.com/media/FYmvrAKVEAMgciI?format=jpg&name=medium" alt="" class="row_poster">
+            <img src="https://occ-0-2430-2433.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVERAU16PxveRG7nzMTgBJeatbDRxF5yX-AJuiPwqe06r8Pg21PjE3ZgbVkxTBS4OqkOHcW0seBU_mAdKoDadgxezJqh.jpg?r=7f9"
+                alt="" class="row_poster">
+            <img src="https://static-us-east-2-fastly-a.www.philo.com/gracenote/assets/p35310_v_h8_ae.jpg" alt=""
+                class="row_poster">
+            <img src="https://mobimg.b-cdn.net/v3/fetch/09/09757045ec22c1a9a89fa6476afdee63.jpeg?w=1470&r=0.5625" alt=""
+                class="row_poster">
+            <img src="https://www.ilk.az/uploads/thumbs/shutter-island-301.jpg" alt="" class="row_poster">
+            <img src="https://occ-0-299-300.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWTEUJFYmPGJaHvjcfVfGx3_bWzn9REQO3h6TpmtyXwKEKu87vNdwoUe0-foNbGghDivr5TfeilKUakeAHLqxep_6rqfaaQUrMg6NO8YyJQ09Ad0U3FdnKBOtdUyxA.jpg?r=7a2"
+                alt="" class="row_poster">
+        </div>
+    </div>
+
+    <!-- Comedy Movies -->
+
+    <div class="row">
+        <h2>COMEDY MOVIES</h2>
+        <div class="row_posters">
+            <img src="https://img.reelgood.com/content/movie/e55cf256-78b7-41d1-a608-abd5a2094a26/backdrop-1920.jpg"
+                alt="" class="row_poster">
+            <img src="https://img-s1.onedio.com/id-5c23d9620fa1accc107b28a3/rev-0/raw/s-01083197fcc2aa4ece699628cda26d24c2521428.jpg"
+                alt="" class="row_poster">
+            <img src="https://sinemasayfam.com/wp-content/uploads/2022/03/the-adam-project-netflix-2.png" alt=""
+                class="row_poster">
+            <img src="https://www.doostihaa.com/img/uploads/2021/12/Yes-Man-2008-Poster.jpg" alt="" class="row_poster">
+            <img src="https://images.kinorium.com/movie/poster/1659243/w1500_44777974.jpg" alt="" class="row_poster">
+            <img src="https://files.livingeconomyadvisors.com/files/answers/2990/ILLECD1FJSpic.jpg" alt=""
+                class="row_poster">
+            <img src="https://occ-0-999-1009.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABYX1bTrs2-eXi3SZ7ndKjt2MESQY3zejxnIOeibljTFPBYPL0t5P1QnziTcvdD7C1CKiMWrSP9sCZQgo3WN3th4BqelqhwE7mQ.jpg?r=c97"
+                alt="" class="row_poster">
+            <img src="https://pbs.twimg.com/media/FYmvrAKVEAMgciI?format=jpg&name=medium" alt="" class="row_poster">
+        </div>
+    </div>
+
+    <!-- Romance Movies -->
+
+    <div class="row">
+        <h2>ROMANCE MOVIES</h2>
+        <div class="row_posters">
+            <img src="https://2.bp.blogspot.com/_FsXZguSwXIk/THbV-w9O6wI/AAAAAAAAATY/dvpPEF9Clp4/s1600/gecegunduz.jpg"
+                alt="" class="row_poster">
+            <img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2019/02/harry%20potter.jpeg"
+                alt="" class="row_poster">
+            <img src="https://shiftdelete.net/wp-content/uploads/2021/03/netflix-kagittan-hayatlar-fragmani-1.jpg"
+                alt="" class="row_poster">
+            <img src="https://i.ytimg.com/vi/P68Xd3xJ8lc/maxresdefault.jpg" alt="" class="row_poster">
+            <img src="https://occ-0-999-1009.1.nflxso.net/dnm/api/v6/0DW6CdE4gYtYx8iy3aj8gs9WtXE/AAAABYX1bTrs2-eXi3SZ7ndKjt2MESQY3zejxnIOeibljTFPBYPL0t5P1QnziTcvdD7C1CKiMWrSP9sCZQgo3WN3th4BqelqhwE7mQ.jpg?r=c97"
+                alt="" class="row_poster">
+            <img src="https://occ-0-2430-2433.1.nflxso.net/dnm/api/v6/7e0PTVDdJ65eumyzagWiJKiw6MU/AAAABe3jURtuZyy8M-92ZefrFXLMEhTFKy9nfCBisWkJ5_4qy5kg4ywWrG1lwlD1RGABi44IsDnGomA2E3lDV-7UVoJz1J8e.jpg"
+                alt="" class="row_poster">
+            <img src="https://sinemasayfam.com/wp-content/uploads/2022/03/the-adam-project-netflix-2.png" alt=""
+                class="row_poster">
+            <img src="https://img.reelgood.com/content/movie/e55cf256-78b7-41d1-a608-abd5a2094a26/backdrop-1920.jpg"
+                alt="" class="row_poster">
+        </div>
+    </div>
+
+
+    <script>
+        player = document.getElementById('video');
+        btnPlayPause = document.getElementById('btnPlayPause');
+
+        player.addEventListener('play', function () {
+            changeButtonType(btnPlayPause, "Pause");
+        }, false);
+        player.addEventListener('pause', function () {
+            changeButtonType(btnPlayPause, "Play");
+        }, false);
+
+        function playPauseVideo() {
+            if (player.paused || player.ended) {
+                changeButtonType(btnPlayPause, 'Pause');
+                player.play();
+            } else {
+                changeButtonType(btnPlayPause, 'Play')
+                player.pause();
+            }
+        }
+
+        function changeButtonType(btn, value) {
+            btn.title = value;
+            btn.innerHTML = value;
+        }
+
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+                nav.classList.add('nav_black');
+            } else {
+                nav.classList.remove('nav_black');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
